@@ -17,7 +17,8 @@ config dnsmasq
 	option nonwildcard '1'
 	option localservice '1'
 	option filter_aaaa '1'
-	option noresolv '0'
+	list server '127.0.0.1#5333'
+	option noresolv '1'
 
 config dhcp 'lan'
 	option interface 'lan'
