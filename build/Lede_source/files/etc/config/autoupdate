@@ -1,9 +1,0 @@
-
-config login
-	option forceupdate '0'
-	option week '7'
-	option hour '5'
-	option minute '0'
-	option enable '1'
-	option github 'https://github.com/jianping0754/AutoBuild-OpenWrt-GT'
-
