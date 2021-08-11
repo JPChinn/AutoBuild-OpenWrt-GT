@@ -5,7 +5,7 @@
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 # 修改IP项的EOF于EOF之间请不要插入其他扩展代码，可以删除或注释里面原本的代码
 git clone https://github.com/jefferypaulchinn/luci-theme-darkmatter.git package/lean/luci-theme-darkmatter  #暗黑主题
-git clone https://github.com/jefferypaulchinn/luci-app-jd-dailybonus.git package/lean/luci-app-jd-dailybonus  #京东签到插件
+#git clone https://github.com/jefferypaulchinn/luci-app-jd-dailybonus.git package/lean/luci-app-jd-dailybonus  #京东签到插件
 
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='192.168.31.3'                                   # IPv4 地址(openwrt后台地址)
