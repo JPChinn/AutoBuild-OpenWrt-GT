@@ -9,7 +9,7 @@
 # 手动按钮启动时候修改true为false也就关闭某项生效，env:下面的开关为定时删除时候分别控制开关
 
 
-name: delete
+name: 删除老固件
 on:
   workflow_dispatch:
     inputs:
