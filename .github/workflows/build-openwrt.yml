@@ -66,7 +66,7 @@ jobs:
         echo "CangKu=${Apidz##*/}" >> $GITHUB_ENV
         echo "Modelfile=${{matrix.target}}" >> $GITHUB_ENV
 
-    - name: 公 告
+    - name: 公告
       run: |
         echo
         git clone --depth 1 -b main https://github.com/281677160/common build/common > /dev/null 2>&1
