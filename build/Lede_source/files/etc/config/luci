@@ -26,7 +26,6 @@ config internal 'ccache'
 config internal 'themes'
 	option infinityfreedom '/luci-static/infinityfreedom'
 	option Darkmatter '/luci-static/darkmatter'
-	option Edge '/luci-static/edge'
 	option Rosy '/luci-static/rosy'
 	option Argon '/luci-static/argon'
 
