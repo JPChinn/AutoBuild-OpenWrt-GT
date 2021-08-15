@@ -10,7 +10,7 @@ uci set network.lan.ipaddr='192.168.31.3'                                   # IP
 uci set network.lan.netmask='255.255.255.0'                                 # IPv4 子网掩码
 uci set network.lan.gateway='192.168.31.1'                                  # IPv4 网关
 uci set network.lan.broadcast='192.168.31.255'                              # IPv4 广播
-uci set network.lan.dns='192.168.31.201 192.168.31.1'                       # DNS(多个DNS要用空格分开)
+uci set network.lan.dns='192.168.31.1'                                      # DNS(多个DNS要用空格分开)
 uci set network.lan.delegate='0'                                            # 去掉LAN口使用内置的 IPv6 管理
 uci commit network                                                          # 不要删除跟注释,除非上面全部删除或注释掉了
 #uci set dhcp.lan.ignore='1'                                                # 关闭DHCP功能
@@ -18,7 +18,7 @@ uci commit network                                                          # �
 uci set system.@system[0].hostname='OpenWrt-GT'                             # 修改主机名称为OpenWrt-GT
 EOF
 
-#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile           # 选择argon为默认主题
+sed -i 's/luci-theme-bootstrap/luci-theme-infinityfreedom/g' feeds/luci/collections/luci/Makefile  # 选择infinityfreedom为默认主题
 sed -i "s/OpenWrt /Standard Edition Compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" $ZZZ    # 增加个性名字Standard Edition
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ                                                             # 设置密码为空
 sed -i 's/PATCHVER:=5.4/PATCHVER:=5.10/g' target/linux/x86/Makefile                                # x86机型,默认内核5.4，修改内核为5.10
